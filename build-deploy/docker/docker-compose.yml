@@ -1,0 +1,11 @@
+# run with docker-compose up -d
+
+version: "3.9"  
+services:
+  web:
+    image: casco/mailsender:latest
+    restart: "no"
+    read_only: true
+    ports:
+        - "8080:8080"
+
